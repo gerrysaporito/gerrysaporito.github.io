@@ -1,0 +1,84 @@
+body{
+	overflow-x: hidden;
+	min-width: 1000px;
+}
+
+#main {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	font-family: 'montserrat', serif;
+}
+
+.sections {
+	width: 100%;
+	min-height: 400px;
+	min-width: inherit;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2 {
+    font-size: 45px;
+ }
+
+/*--------------- Landing Page ---------------*/
+#fake {
+	background-color: black;
+	font-family: courier new;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 9000px;
+	width: 100%;
+	position: absolute;
+	overflow-y: auto;
+	top: 0;
+	z-index: 20000000;
+}
+
+.hidden {  /*Fade Out*/
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility .5s, opacity .5s linear;
+}
+
+#quote {
+	color: white;
+	position: relative;
+	top: 325px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+/*--------------- Horizontal Line Next to Headers ---------------*/
+/* headlines with lines */
+.decorated{
+     overflow: hidden;
+     text-align: center;
+     width: 70%;
+     margin: 0 auto;
+ }
+.decorated > span{
+    position: relative;
+    display: inline-block;
+}
+.decorated > span:before, .decorated > span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 592px; /* half of limiter */
+    margin: 0 20px;
+}
+.decorated > span:before{
+    right: 100%;
+}
+.decorated > span:after{
+    left: 100%;
+}

@@ -36,15 +36,15 @@ var isInViewport = function (elem) {
 *
 *@retun NULL
 */
-function skillsAppear(){
-  var skills = document.querySelectorAll(".skillsBar .hidden");
+function hiddenAppear(){
+  var hidden = document.querySelectorAll(".hidden");
   $(window).bind('scroll', function () {
-    for(let i = 0; i < skills.length; i++){
+    for(let i = 0; i < hidden.length; i++){
       var appear = false;
     // set distance user needs to scroll before skills fades in
-      if (isInViewport(skills[i]) && !appear) {
-        skills[i].classList.remove("hidden");
-        skills[i].classList.add("visible");
+      if (isInViewport(hidden[i]) && !appear) {
+        hidden[i].classList.remove("hidden");
+        hidden[i].classList.add("visible");
         appear = true;
       }
     }
@@ -75,7 +75,7 @@ function skillsAppear(){
 */
 function pageInit(){
   startUp();
-  skillsAppear();
+  hiddenAppear();
 }
 
 pageInit();

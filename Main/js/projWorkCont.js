@@ -20,16 +20,18 @@
   *@retun NULL
   */
   function contAppear() {
-  	var prod = $('.contIn');
+  	var prods = $('.contIn h4 img');
+    var prod = $('.hidden1');
   	var scrollPosition = 0;
   	var prodDistFromTop = [];
-
+    console.log(prod);
+    console.log(prods);
   	window.addEventListener("scroll", function() {
-  		for(let i = 0; i < prod.length; i++) {
+  		for(let i = 0; i < prods.length; i++) {
   			let appeared = false;
-  			if(isInViewport(prod[i]) && !appeared){
-  				prod[i].classList.remove("hidden");
-  				prod[i].classList.add("visible");
+  			if(isInViewport(prods[i]) && !appeared){
+  				prod[i].classList.remove("hidden1");
+  				prod[i].classList.add("visible1");
   				appeared = true;
   			}
 

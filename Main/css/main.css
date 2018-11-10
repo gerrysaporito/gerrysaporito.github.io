@@ -23,22 +23,38 @@ body{
 }
 
 h2 {
-    font-size: 30px;
- }
- .hidden {
-  visibility: hidden;
-  -webkit-transition: opacity 1.0s ease-out;
-       -moz-transition: opacity 1.0s ease-out;
-         -o-transition: opacity 1.0s ease-out;
-                                  opacity: 0;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.hidden {
+	visibility: hidden;
+	-webkit-transition: opacity 1.0s ease-out;
+	-moz-transition: opacity 1.0s ease-out;
+	-o-transition: opacity 1.0s ease-out;
+	opacity: 0;
+}
+.hidden1 {
+	visibility: hidden;
+	-webkit-transition: opacity 1.0s ease-out;
+	-moz-transition: opacity 1.0s ease-out;
+	-o-transition: opacity 1.0s ease-out;
+	opacity: 0;
 }
 
 .visible {
-  visibility: visible;
-  -webkit-transition: opacity 1.0s ease-in;
-       -moz-transition: opacity 1.0s ease-in;
-         -o-transition: opacity 1.0s ease-in;
-                                  opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 1.0s ease-in;
+	-moz-transition: opacity 1.0s ease-in;
+	-o-transition: opacity 1.0s ease-in;
+	opacity: 1;
+}
+
+.visible1 {
+	visibility: visible;
+	-webkit-transition: opacity .5s ease-in;
+	-moz-transition: opacity .5s ease-in;
+	-o-transition: opacity .5s ease-in;
+	opacity: 1;
 }
 
 /*--------------- Landing Page ---------------*/
@@ -68,26 +84,36 @@ h2 {
 /*--------------- Horizontal Line Next to Headers ---------------*/
 /* headlines with lines */
 .decorated{
-     overflow: hidden;
-     text-align: center;
-     width: 70%;
-     margin: 0 auto;
- }
+	overflow: hidden;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+}
 .decorated > span{
-    position: relative;
-    display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 .decorated > span:before, .decorated > span:after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    border-bottom: 2px solid;
-    width: 592px; /* half of limiter */
-    margin: 0 20px;
+	content: '';
+	position: absolute;
+	top: 50%;
+	border-bottom: 2px solid;
+	width: 592px; /* half of limiter */
+	margin: 0 20px;
 }
 .decorated > span:before{
-    right: 100%;
+	right: 100%;
 }
 .decorated > span:after{
-    left: 100%;
+	left: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+	h2 {
+		margin-bottom: 0;
+		text-align: center;
+	}
+	h5 {
+		text-align: center;
+	}
 }

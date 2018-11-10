@@ -1,5 +1,3 @@
-
-
 /*--------------- Projects ---------------*/
  .contOut {
 	width: 90%;
@@ -35,6 +33,7 @@
 	position: relative;
 	display: inline;
 	margin-left: 8%;
+	width: 95%;
 }
 
 .infoCont h4 {
@@ -78,22 +77,23 @@
 }
 
 @media only screen and (max-width: 768px) {
+	.cont {
+		padding-top: 10px;
+	}
 	.contIn{
 		display: flex;
 		flex-direction: column;
-		margin: 0 auto 100px auto;
+		margin: 30px auto;
+		width: 100%;
 	}
 	.infoCont {
-		width: 90%;
+		width: 95%;
 	}
 	.contOut img {
 		margin: 0 auto 40px auto;
 		width: 80%;
 		height: auto;
 		display: block;
-	}
-	.contOut h2 {
-		margin-bottom: 75px;
 	}
 }
 

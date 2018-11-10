@@ -21,7 +21,7 @@
 #intro {
 	position: relative;
 	float: left;
-	margin-top: 125px;
+	margin-top: 300px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -30,11 +30,11 @@
 #profilePic {
 	position: relative;
 	border-radius: 50%;
-	width: 350px;
+	width: 400px;
 	height: auto;
 	float: right;
 	border: 15px solid #9999ff;
-	margin-top: 315px;
+	margin-top: 300px;
 	z-index: 1;
 }
 
@@ -56,7 +56,7 @@
 	z-index: 1;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1500px) {
 	body {
 		word-wrap: break-word;
 	}
@@ -83,6 +83,55 @@
 		margin: 0 auto 0 auto;
 		border: 15px solid #9999ff;
 		z-index: 1;
+		top: 200px;
+	}
+
+	#intro h1 {
+		font-size: 3rem;
+		border-radius: 25px;
+		margin: 0 auto;
+		display: block;
+		width: auto;
+	}
+
+	#intro p {
+		font-size: 1.25rem;
+		border-radius: 25px;
+		margin-top: 30px;
+		line-height: 30px;
+		width: auto;
+		text-align: center;
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		word-wrap: break-word;
+	}
+	#jumbo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#intro {
+		position: relative;
+		margin: 0 auto;
+		top: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#profilePic {
+		display: block;
+		position: relative;
+		border-radius: 50%;
+		width: 300px;
+		height: auto;
+		margin: 0 auto 0 auto;
+		border: 15px solid #9999ff;
+		z-index: 1;
 		top: 145px;
 	}
 
@@ -92,6 +141,7 @@
 		margin: 0 auto;
 		display: block;
 		width: auto;
+		text-align: center;
 	}
 
 	#intro p {

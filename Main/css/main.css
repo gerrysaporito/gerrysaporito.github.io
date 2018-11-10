@@ -25,6 +25,21 @@ body{
 h2 {
     font-size: 30px;
  }
+ .hidden {
+  visibility: hidden;
+  -webkit-transition: opacity 1.0s ease-out;
+       -moz-transition: opacity 1.0s ease-out;
+         -o-transition: opacity 1.0s ease-out;
+                                  opacity: 0;
+}
+
+.visible {
+  visibility: visible;
+  -webkit-transition: opacity 1.0s ease-in;
+       -moz-transition: opacity 1.0s ease-in;
+         -o-transition: opacity 1.0s ease-in;
+                                  opacity: 1;
+}
 
 /*--------------- Landing Page ---------------*/
 #fake {
@@ -34,18 +49,12 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	height: 9000px;
+	height: 5000px;
 	width: 100%;
 	position: absolute;
 	overflow-y: auto;
 	top: 0;
 	z-index: 20000000;
-}
-
-.hidden {  /*Fade Out*/
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility .5s, opacity .5s linear;
 }
 
 #quote {

@@ -71,12 +71,13 @@ function sideBarToggle() {
             }
         });
     });
-	//To get #fake to fade out after scrolling
-	$(window).bind('scroll', function() {
-		if($(window).scrollTop() < 100){
-			$('#fake').addClass("hidden");
-		}
-	});
+  	//To get #fake to fade out after scrolling
+  	$(window).bind('scroll', function() {
+      let fakeElem = document.querySelector('#fake').getBoundingClientRect().top;
+      if(fakeElem < 0){
+        $('#fake').fadeOut();
+      }
+  	});
   }
 
 /**Page scroll to div when nav button is pressed

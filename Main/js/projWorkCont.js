@@ -24,8 +24,6 @@
     var prod = $('.hidden1');
   	var scrollPosition = 0;
   	var prodDistFromTop = [];
-    console.log(prod);
-    console.log(prods);
   	window.addEventListener("scroll", function() {
   		for(let i = 0; i < prods.length; i++) {
   			let appeared = false;

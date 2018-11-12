@@ -1,14 +1,22 @@
 #interests img {
-  width: 150px;
-  height: auto;
-  border: none;
+    position: relative;
+    width: 100px;
+    height: auto;
+    height: auto;
+    border: none;
+    margin: auto;
 }
 
 .tooltip {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 150px;
+    height: 150px;
     opacity: 1;
+    border-radius: 50%;
+    border: 4px solid black;
 }
 
 .tooltip .tooltiptext {

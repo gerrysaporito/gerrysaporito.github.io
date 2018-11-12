@@ -62,6 +62,7 @@ function sideBarToggle() {
   function navAppear(){
   	// fade in .navbar
     $(function () {
+      var fake = document.querySelector("#fake");
         $(window).bind('scroll', function () {
             // set distance user needs to scroll before we start fadeIn
             if ($(window).scrollTop() > 680) {
@@ -78,6 +79,9 @@ function sideBarToggle() {
         $('#fake').fadeOut();
       }
   	});
+    fake.addEventListener("click", function() {
+      $('#fake').fadeOut();
+    });
   }
 
 /**Page scroll to div when nav button is pressed

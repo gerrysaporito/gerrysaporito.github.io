@@ -12,6 +12,8 @@ function startUp() {
   $(window).on('beforeunload', function(){
     $(window).scrollTop(0);
   });
+  //Hide scrollable navbar
+  $('.scrlNavbar').fadeOut();
 }
 
 

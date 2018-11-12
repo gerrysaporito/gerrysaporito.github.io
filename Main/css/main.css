@@ -116,4 +116,7 @@ h2 {
 	h5 {
 		text-align: center;
 	}
+	#quote {
+		top: 275px;
+	}
 }

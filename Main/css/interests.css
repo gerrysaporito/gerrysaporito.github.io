@@ -38,4 +38,11 @@
 
 .tooltip:hover .tooltiptext {
     display: inline-block;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1428px) {
+    .tooltip {
+        margin: 30px auto;
+    }
 }

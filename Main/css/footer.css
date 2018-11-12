@@ -67,6 +67,15 @@
 	text-align: center;
 }
 
+#footer a {
+	color: black;
+}
+
+#footer a:hover {
+	color: black;
+	cursor: pointer;
+}
+
 @media only screen and (max-width: 1428px) {
     .fancyUnderline {
     	display: none;

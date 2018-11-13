@@ -84,7 +84,7 @@ $(document).ready(function(){
           // Set default step function for all animate calls
           step: (state, bar) => {
             bar.path.setAttribute('stroke', state.color);
-            var value = Math.round(bar.value() * 8) + " of 8";
+            var value = Math.round(bar.value() * 6) + " of 6";
             if (value === 0) {
               bar.setText('');
             } else {
@@ -97,7 +97,7 @@ $(document).ready(function(){
         bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
         bar.text.style.fontSize = '2rem';
 
-        bar.animate(2/8);  // Number from 0.0 to 1.0
+        bar.animate(2/6);  // Number from 0.0 to 1.0
         scrl2 = false;
     }
     if(isInViewport(statsSect[2]) && scrl3){
@@ -117,12 +117,12 @@ $(document).ready(function(){
             value: '',
             alignToBottom: false
           },
-          from: {color: '#FFEA82'},
-          to: {color: '#ED6A5A'},
+          from: {color: '#DC143C'},
+          to: {color: '	#FF0000'},
           // Set default step function for all animate calls
           step: (state, bar) => {
             bar.path.setAttribute('stroke', state.color);
-            var value = Math.round(bar.value() * 6) + " of 6";
+            var value = Math.round(bar.value() * 8) + " of 8";
             if (value === 0) {
               bar.setText('');
             } else {
@@ -135,7 +135,7 @@ $(document).ready(function(){
         bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
         bar.text.style.fontSize = '2rem';
 
-        bar.animate(2/6);  // Number from 0.0 to 1.0
+        bar.animate(2/8);  // Number from 0.0 to 1.0
 
         scrl3 = false;
       }

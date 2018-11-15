@@ -22,16 +22,21 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">	
 	
 
-
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-
+	<!-- Circles Scripts -->
+	<script type="text/javascript" src="./Main/js/paper.js/dist/paper-full.js"></script>
+	<script type="text/javascript" src="./Main/js/howler.js/dist/howler.js"></script>
+	<script type="text/paperscript" src="./Main/js/circles.js" canvas="myCanvas"></script>
 	<!-- Particle Jumbotron Link -->
-	<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
-	<!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+	<!-- stats.js lib --> 
+	<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 </head>
 <body>
+	<!--------------- Circles Canvas --------------->
+	<canvas id="myCanvas"></canvas>
 
 	<!--------------- Toggle Menu --------------->
 	<div class="toggle">
@@ -109,7 +114,7 @@
 
 	<div id="main">	
 		<!--------------- Fixed particles.js Container Navbar --------------->
-		<div class="Navbar nav">
+		<div class="Navbar nav" id="fixed">
 			<div class="brand">
 				Gerry Saporito
 			</div>

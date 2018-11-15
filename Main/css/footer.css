@@ -47,7 +47,7 @@
 #footer {
 	bottom: 0;
 	width: 100%;
-	background-color: #F0F0F0;
+	background-color: rgba(240, 240, 240, 0.5);
 	font-size: 1.25rem;
 	display: flex;
 	flex-wrap: wrap;

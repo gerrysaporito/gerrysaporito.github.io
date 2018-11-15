@@ -1,6 +1,13 @@
 body{
 	overflow-x: hidden;
 	min-width: 1000px;
+	margin: 0;
+}
+#myCanvas {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
 }
 
 #main {
@@ -169,4 +176,8 @@ h2 {
 	}
 	h5 {
 		text-align: center;
+	}
+	#myCanvas {
+		display: none;
+	}
 }

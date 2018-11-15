@@ -80,10 +80,10 @@
 	margin-top: 10px;
 	display: none;
 }
-.Navbar a {
+#fixed a {
 	color: grey;
 }
-.Navbar a:hover {
+#fixed a:hover {
 	color: black;
 }
 @media only screen and (max-width: 768px) {
@@ -174,7 +174,7 @@
 }
 @media only screen and (max-width: 768px) {
 	.Navbar__Items,
-	.Navbar {
+	#fixed {
 		flex-direction: column;
 	}
 	.Navbar__Items {

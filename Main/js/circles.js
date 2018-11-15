@@ -183,5 +183,9 @@ function onFrame(event){
 		circles[i].fillColor.hue += 1;
 		//diminish circle
 		circles[i].scale(.9);
+		if(circles[i].area < 1){
+	      	circles[i].remove(); // remove the circle from the canvas
+	      	circles.splice(i, 1); // remove the circle from the array
+	    }
 	}
 }

@@ -28,7 +28,7 @@
 			}
 		});
     //hide navbar option screen on click
-    $(window).bind('click', function(){
+    $(".toggle").bind('click', function(){
       if(togHide) {
         $(".toggle").fadeOut();
         togHide = false;

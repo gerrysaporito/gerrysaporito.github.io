@@ -76,6 +76,10 @@
 	cursor: pointer;
 }
 
+#footer #credit {
+	font-size: .85rem;
+}
+
 @media only screen and (max-width: 1428px) {
     .fancyUnderline {
     	display: none;

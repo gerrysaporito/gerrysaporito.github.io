@@ -180,6 +180,9 @@ h2 {
 	#myCanvas {
 		display: none;
 	}
+	#staticBubble {
+		display: none;
+	}
 }
 
 /*--------------- Static Speech Bubble ---------------*/

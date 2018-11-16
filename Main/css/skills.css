@@ -1,5 +1,6 @@
 #skills {
     background: radial-gradient(closest-side, rgba(0, 255, 255, 0.2) 0%, rgba(0, 255, 255, 0.1) 100%);
+    padding: 0 0 50px 0;
 }
 
 #skillsContIn {
@@ -85,13 +86,13 @@
 }
 
 .skillbar-bar {
-height:35px;
-width:0px;
-background: rgba(96, 175, 191, .8);
-border-radius:3px;
--moz-border-radius:3px;
--webkit-border-radius:3px;
-float: left;
+    height:35px;
+    width:0px;
+    background: rgba(96, 175, 191, .8);
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    float: left;
 }
 
 .skill-bar-percent {
@@ -125,5 +126,8 @@ float: left;
     }
     .col {
         width: 90%;
+    }
+    #skillsContIn h5 {
+        margin: 0 auto 30px auto;
     }
 }

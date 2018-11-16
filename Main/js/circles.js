@@ -1,4 +1,6 @@
 var circles = [];
+
+//Data for each letter key
 var keyData = {
 	q: {
 		sound: new Howl({
@@ -158,6 +160,11 @@ var keyData = {
 	}
 }
 
+/**Runs the patatap function that diminishes a circle 
+*@Input Null
+*
+*@retun NULL
+*/
 function onKeyDown(event) {
 	if(keyData[event.key]){
 		//creating the max point

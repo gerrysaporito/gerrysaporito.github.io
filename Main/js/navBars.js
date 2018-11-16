@@ -3,11 +3,11 @@
   *
   *@retun NULL
   */
-function sideBarToggle() {
-	var toggle = document.querySelectorAll(".fa-bars");
-	var togDiv = document.querySelector(".toggle");
-	var togHide = false;
-	var togOptions = $(".toggle a");
+  function sideBarToggle() {
+   var toggle = document.querySelectorAll(".fa-bars");
+   var togDiv = document.querySelector(".toggle");
+   var togHide = false;
+   var togOptions = $(".toggle a");
 
 	//when toggle bars show, shows navbar option screen
 	for(var togIndex= 0; togIndex < toggle.length; togIndex++) {
@@ -27,7 +27,14 @@ function sideBarToggle() {
 				togHide = false;
 			}
 		});
-	}
+    //hide navbar option screen on click
+    $(window).bind('click', function(){
+      if(togHide) {
+        $(".toggle").fadeOut();
+        togHide = false;
+      }
+    });
+  }
 	//hide navbar option screen on option click
 	for(var optionIndex = 0; optionIndex < togOptions; togOptions++) {
 		togOptions[optionIndex].addEventListener("click", function() {
@@ -47,12 +54,12 @@ function sideBarToggle() {
   function scrollToDiv(event, href) {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 1000);
+      event.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top
+      }, 1000);
     }
-}
+  }
 
 /**Scrollbar slide down after certain page scroll
   *@Input Null
@@ -63,22 +70,23 @@ function sideBarToggle() {
   	// fade in .navbar
     $(function () {
       var fake = document.querySelector("#fake");
-        $(window).bind('scroll', function () {
+      $(window).bind('scroll', function () {
             // set distance user needs to scroll before we start fadeIn
             if ($(window).scrollTop() > 680) {
-                $('.scrlNavbar').fadeIn();
+              $('.scrlNavbar').fadeIn();
             } else {
-                $('.scrlNavbar').fadeOut();
+              $('.scrlNavbar').fadeOut();
             }
-        });
+          });
     });
-  	//To get #fake to fade out after scrolling
+  	//Fade out fake landing page after scrolling
   	$(window).bind('scroll', function() {
       let fakeElem = document.querySelector('#fake').getBoundingClientRect().top;
       if(fakeElem < 0){
         $('#fake').fadeOut();
       }
-  	});
+    });
+    //Fade out fake landing page on click
     fake.addEventListener("click", function() {
       $('#fake').fadeOut();
     });
@@ -92,16 +100,16 @@ function sideBarToggle() {
   function buttonScrollDown(){
   	$('a[href^="#"]').on('click', function(event) {
 
-    var target = $(this.getAttribute('href'));
+      var target = $(this.getAttribute('href'));
 
-    if( target.length ) {
+      if( target.length ) {
         event.preventDefault();
         $('html, body').stop().animate({
-            scrollTop: target.offset().top
+          scrollTop: target.offset().top
         }, 1000);
-    }
+      }
 
-});
+    });
   }
 
 /**Initializes and runs the scrolable navbar, with the fade-in animation
@@ -109,12 +117,12 @@ function sideBarToggle() {
   *
   *@retun NULL
   */
-function navBars(){
-	sideBarToggle();
-	navAppear();
-	buttonScrollDown();
-    
-}
+  function navBars(){
+   sideBarToggle();
+   navAppear();
+   buttonScrollDown();
+
+ }
 
 
-navBars();
+ navBars();

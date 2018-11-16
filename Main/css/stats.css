@@ -1,7 +1,8 @@
 #stats {
 	display: flex;
 	flex-direction: row;
-	margin: 0 auto 30px auto;
+	padding: 0 auto 50px auto;
+	margin-bottom: 50px;
 }
 
 .stat {
@@ -31,6 +32,10 @@
 	#stats {
 		display: flex;
 		flex-direction: column;
-		margin: 0 auto 30px auto;
+		padding: 0 auto 30px auto;
+		margin-bottom: 50px;
 	}	
+	.statsContIn {
+		margin-top: 0;
+	}
 }

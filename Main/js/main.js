@@ -43,7 +43,7 @@ function hiddenAppear(){
   $(window).bind('scroll', function () {
     for(let i = 0; i < hidden.length; i++){
       var appear = false;
-    // set distance user needs to scroll before skills fades in
+      // set distance user needs to scroll before skills fades in
       if (isInViewport(hidden[i]) && !appear) {
         hidden[i].classList.remove("hidden");
         hidden[i].classList.add("visible");

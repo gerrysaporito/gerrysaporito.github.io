@@ -45,4 +45,7 @@
     .tooltip {
         margin: 30px auto;
     }
+    #interests .contIn {
+        margin-top: 0;
+    }
 }

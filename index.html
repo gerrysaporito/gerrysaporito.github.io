@@ -22,15 +22,16 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">	
 	
 
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<!-- jQuery Scripts -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 	<!-- Circles Scripts -->
 	<script type="text/javascript" src="./Main/js/paper.js/dist/paper-full.js"></script>
 	<script type="text/javascript" src="./Main/js/howler.js/dist/howler.js"></script>
 	<script type="text/paperscript" src="./Main/js/circles.js" canvas="myCanvas"></script>
-	<!-- Particle Jumbotron Link -->
+	<!-- Particle Jumbotron Scripts -->
 	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 	<!-- stats.js lib --> 
 	<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 </head>
@@ -66,7 +67,6 @@
 			</div>
 		</div>
 	</div>
-
 
 	<!--------------- Scrollable Navigation Bar --------------->
 	<div class="scrlNavbar nav">
@@ -113,7 +113,7 @@
 		</div>
 	</div>
 
-
+<!----------------------------------------------- START OF WEB PAGE ----------------------------------------------->
 	<div id="main">	
 		<!--------------- Fixed particles.js Container Navbar --------------->
 		<div class="Navbar nav" id="fixed">
@@ -147,8 +147,8 @@
 			</nav>
 		</div>
 
+		<!--------------- Particles Jumbotron --------------->
 		<div class="sections cont">
-			<!--------------- Particles Jumbotron --------------->
 			<div id="jumbo">
 				<!-- Intro -->
 				<div id="intro">
@@ -166,7 +166,7 @@
 			<div id="particles-js"></div> 
 		</div>
 
-		<!-- Some Stats About Me -->
+		<!--------------- My Stats --------------->
 		<div class="sections cont" id="statsSect">
 			<div class="contOut" id="statsContOut">
 				<h2><strong>Some stats about me</strong></h2>
@@ -189,8 +189,7 @@
 			</div>
 		</div>
 
-		<!-- skillsbar jsfiddle----------- https://jsfiddle.net/Mi_Creativity/81ngace8/1/ -->
-
+		<!--------------- My Skills --------------->
 		<div class="sections cont" id="skills">
 			<div class="contOut">
 				<h2><strong>This is what I know</strong></h2>
@@ -199,10 +198,10 @@
 					<div class="skillsBar">
 						<div class="col">
 							<div class="hidden">
-								<div class="skillbar clearfix" data-percent="85%">
+								<div class="skillbar clearfix" data-percent="75%">
 									<div class="skillbar-title"><span>C++</span></div>
 									<div class="skillbar-bar"></div>
-									<div class="skill-bar-percent">85%</div>
+									<div class="skill-bar-percent">75%</div>
 								</div>
 							</div>
 							<div class="hidden">
@@ -269,209 +268,210 @@
 			</div>			
 		</div>
 
-<!------------------------------------------------------------------------------------
-Container Formats
-	<div class="sections cont" id="***id name to modify background color***">
-		<div class="contOut">
+		<!------------------------------------------------------------------------------------
+		Container Formats
+			<div class="sections cont" id="***id name to modify background color***">
+				<div class="contOut">
 
-			<div class="contIn hidden">
-				<h4><a href="***website src***"><img src="./Main/images/***imageFileName***"></a></h4>
-				<div class="infoCont">
-					<h4><a href="***website src***">***Title***</a></h4>
-					<h6><strong>***Subtitle***</strong></h6>
-					<p>
-						******************TEXT CONTENT******************
-					</p>
+					<div class="contIn hidden">
+						<h4><a href="***website src***"><img src="./Main/images/***imageFileName***"></a></h4>
+						<div class="infoCont">
+							<h4><a href="***website src***">***Title***</a></h4>
+							<h6><strong>***Subtitle***</strong></h6>
+							<p>
+								******************TEXT CONTENT******************
+							</p>
+						</div>
+					</div>
+
 				</div>
 			</div>
+		------------------------------------------------------------------------------------->
 
-		</div>
-	</div>
-	------------------------------------------------------------------------------------->
+		<!--------------- Work Experience --------------->
+		<div class="sections cont" id="workExp">
+			<div class="contOut">
+				<h2><strong>My work experience</strong></h2>
 
-	<!--------------- Work Experience --------------->
-	<div class="sections cont" id="workExp">
-		<div class="contOut">
-			<h2><strong>My work experience</strong></h2>
-
-			<!-- Comms and Marketing for UWaterloo -->
-			<div class="contIn hidden1">
-				<h4><a href="https://www.uwaterloo.ca/hire"><img id="uWaterlooLogo" src="./Main/images/uWaterlooLogo.png" alt="University of Waterloo Logo"></a></h4>
-				<div class="infoCont">
-					<h4><a href="https://www.uwaterloo.ca/hire"><strong>University of Waterloo</strong></a></h4>
-					<h6><strong>Full Stack Web Developer</strong></h6>
-					<h6><i>September - December 2018</i></h6>
-					<p>
-						During my time in the Communications and Marketing team at the University of Waterloo, I developed web design tools for Drupal, a website content management system to enhance the current UX/UI of the University’s website. With the priority of user experience, I designed, developed, and implemented WYSIWYG (what-you-see-is-what-you-get) extensions for Drupal. Using Google Appscripts, PHP, and Javascript (along with HTML and CSS), I developed a universal filter tool where users can search through products on a Google Sheet in a Pinterest-like manner. I’ve also developed tools to track and direct web traffic throughout the University of Waterloo’s website.
-					</p>
-				</div>
-			</div>
-
-			<!-- Paragon Systems -->
-			<div class="contIn hidden1">
-				<h4><a href="http://paragonsystems.net/test-automation-services/"><img src="./Main/images/paragonSystemsLogo.jpg" alt="Paragon Systems Logo"></a></h4>
-				<div class="infoCont">
-					<h4><a href="http://paragonsystems.net/test-automation-services/"><strong>Paragon Systems</strong></a></h4>
-					<h6><strong>Mechatronics Engineering Coop</strong></h6>
-					<h6><i>January - April 2018</i></h6>
-					<p>
-						At Paragon Systems, I developed a fundamental understanding of mechanical and electrical design, through working with the mechanical and electrical engineers and technicians to build an EOLT (End of the Line Tester) for Ford and Mercedes’ motorized car seats. 
-						I assembled, wired, and assisted with the troubleshooting of the mechanical and electrical components of the Ford C2 platform and Mercedes Daimler EOLT and electrical panels.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--------------- Projects --------------->
-	<div class="sections cont" id="myProjects">
-		<div class="contOut">
-			<h2><strong>My projects to date</strong></h2>
-			<!-- Color Picker Exercise -->
-			<div class="contIn hidden1">
-				<h4><a href="./The Amazing Colour Picker/ColorGame.html" target="_blank"><img src="./Main/images/RGBColorPicker.png" alt="The Amazing Color Picker Game"></a></h4>
-				<div class="infoCont">
-					<h4><a href="./The Amazing Colour Picker/ColorGame.html" target="_blank">The Colour Picker Exercise</a></h4>
-					<h6><i>Javascript</i></h6>
-					<p>
-						This Javascript project allows users to practice reading RGB code. The game displays an RGB value and 3 or 6 coloured squares (depending on the selected difficulty level). The user aims to match the correct colour to the featured RGB value.
-					</p>
-				</div>
-			</div>
-
-			<!-- 3D Printer -->
-			<div class="contIn hidden1">
-				<h4><img src="https://ae01.alicdn.com/kf/HTB1ejE5MXXXXXawXVXXq6xXFXXXw/2016-LCD-Diy-3d-Metal-Printer-Large-Printing-Size-3d-Printer-Kossel-Delta-3d-Printer-Kit.jpg_640x640.jpg" alt="Delta 3D Printer"></h4>
-				<div class="infoCont">
-					<h4>3D Printer</h4>
-					<h6><i>G-code</i></h6>
-					<p>
-						Ever think about how amazing 3D printers are? And even wonder how they work? Me too! With this project, I built a Kossel Delta 3D Printer with a hot bed and auto levelling system. This was a fun little project, where I got to learn about the fundamental design of a mechatronics system. <br>
-						If you are also interested in building your own 3D printer, <a href="https://www.3dprintersonlinestore.com" target="_blank"><i>here</i></a> is an awesome place to start.
-					</p>
-				</div>
-			</div>
-
-			<!-- Spool Filament Holder -->
-			<div class="contIn hidden1">
-				<h4><img src="./Main/images/spoolFilamentHolder.jpg" alt="SolidWorks and AutoCAD Spool Filament Holder"></h4>
-				<div class="infoCont">
-					<h4>Spool Filament Holder for 3D Printer</h4>
-					<h6><i>SolidWorks & AutoCAD</i></h6>
-					<p>
-						In addition to this project, I have also planned and designed a universal filament spool holder, which conveniently sits on top of the printer, on AutoCAD and SolidWorks respectively. It can hold any type of spool size securely, regardless of the spool hold size<br>
-						You can download the SolidWorks files <a href="../spool Filament Holder.zip" download="../spool Filament Holder.zip"><i>here</i></a>.
-					</p>
-				</div>
-			</div>
-
-			<!-- Robotic Poker Dealer -->
-			<div class="contIn hidden1">
-				<h4><img src="./Main/images/roboticPokerDealer.png" alt="Poker Dealing Robot"></h4>
-				<div class="infoCont">
-					<h4>Robotic Poker Dealer</h4>
-					<h6><i>C++</i></h6>
-					<p>
-						This was my first design project, done at the end of my 1A term at the University of Waterloo. My team and I designed, built, and programmed a mechatronics system.<br>
-						This little guy was built using LEGO EV3 and Tetrix Robotics pieces. Using sensors and motors, this dealer was not only able to identify how many players were in the game and where their location was, but was also able to shuffle and deal face down and face up cards to the players' locations and to the center of the table, while abiding to the rules of the game.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--------------- Interests --------------->
-	<div class="sections cont" id="interests">
-		<div class="contOut">
-			<h2><strong>Some of the things I enjoy</strong></h2>
-			<div class="contIn">
-				<div class="hidden">
-					<div class="tooltip">
-						<img src="./Main/images/weightlifting.png">
-						<span class="tooltiptext">
-							Fitness Enthusiast<br>
-						</span>
+				<!-- Comms and Marketing for UWaterloo -->
+				<div class="contIn hidden1">
+					<h4><a href="https://www.uwaterloo.ca/hire"><img id="uWaterlooLogo" src="./Main/images/uWaterlooLogo.png" alt="University of Waterloo Logo"></a></h4>
+					<div class="infoCont">
+						<h4><a href="https://www.uwaterloo.ca/hire"><strong>University of Waterloo</strong></a></h4>
+						<h6><strong>Full Stack Web Developer</strong></h6>
+						<h6><i>September - December 2018</i></h6>
+						<p>
+							During my time in the Communications and Marketing team at the University of Waterloo, I developed web design tools for Drupal, a website content management system to enhance the current UX/UI of the University’s website. With the priority of user experience, I designed, developed, and implemented WYSIWYG (what-you-see-is-what-you-get) extensions for Drupal. Using Google Appscripts, PHP, and Javascript (along with HTML and CSS), I developed a universal filter tool where users can search through products on a Google Sheet in a Pinterest-like manner. I’ve also developed tools to track and direct web traffic throughout the University of Waterloo’s website.
+						</p>
 					</div>
 				</div>
-				<div class="hidden">
-					<div class="tooltip">
-						<img src="./Main/images/chef.png">
-						<span class="tooltiptext">
-							Devoted Chef<br>
-							Passionate Taste Tester
-						</span>
-					</div>
-				</div>
-				<div class="hidden">
-					<div class="tooltip">
-						<img src="./Main/images/running.png">
-						<span class="tooltiptext">
-							Athlete<br>
-							Ball and/or Raquet Sports, Running/Sprints, Rowing, etc.
-						</span>
-					</div>
-				</div>
-				<div class="hidden">
-					<div class="tooltip hidden">
-						<img src="./Main/images/musicNote.png">
-						<span class="tooltiptext">
-							Guitar and Piano Player <br>
-							Spotify User
-						</span>
+
+				<!-- Paragon Systems -->
+				<div class="contIn hidden1">
+					<h4><a href="http://paragonsystems.net/test-automation-services/"><img src="./Main/images/paragonSystemsLogo.jpg" alt="Paragon Systems Logo"></a></h4>
+					<div class="infoCont">
+						<h4><a href="http://paragonsystems.net/test-automation-services/"><strong>Paragon Systems</strong></a></h4>
+						<h6><strong>Mechatronics Engineering Coop</strong></h6>
+						<h6><i>January - April 2018</i></h6>
+						<p>
+							At Paragon Systems, I developed a fundamental understanding of mechanical and electrical design, through working with the mechanical and electrical engineers and technicians to build an EOLT (End of the Line Tester) for Ford and Mercedes’ motorized car seats. 
+							I assembled, wired, and assisted with the troubleshooting of the mechanical and electrical components of the Ford C2 platform and Mercedes Daimler EOLT and electrical panels.
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="sections" id="ideology">
+		<!--------------- Projects --------------->
+		<div class="sections cont" id="myProjects">
+			<div class="contOut">
+				<h2><strong>My projects to date</strong></h2>
+				<!-- Color Picker Exercise -->
+				<div class="contIn hidden1">
+					<h4><a href="./The Amazing Colour Picker/ColorGame.html" target="_blank"><img src="./Main/images/RGBColorPicker.png" alt="The Amazing Color Picker Game"></a></h4>
+					<div class="infoCont">
+						<h4><a href="./The Amazing Colour Picker/ColorGame.html" target="_blank">The Colour Picker Exercise</a></h4>
+						<h6><i>Javascript</i></h6>
+						<p>
+							This Javascript project allows users to practice reading RGB code. The game displays an RGB value and 3 or 6 coloured squares (depending on the selected difficulty level). The user aims to match the correct colour to the featured RGB value.
+						</p>
+					</div>
+				</div>
+
+				<!-- 3D Printer -->
+				<div class="contIn hidden1">
+					<h4><img src="https://ae01.alicdn.com/kf/HTB1ejE5MXXXXXawXVXXq6xXFXXXw/2016-LCD-Diy-3d-Metal-Printer-Large-Printing-Size-3d-Printer-Kossel-Delta-3d-Printer-Kit.jpg_640x640.jpg" alt="Delta 3D Printer"></h4>
+					<div class="infoCont">
+						<h4>3D Printer</h4>
+						<h6><i>G-code</i></h6>
+						<p>
+							Ever think about how amazing 3D printers are? And even wonder how they work? Me too! With this project, I built a Kossel Delta 3D Printer with a hot bed and auto levelling system. This was a fun little project, where I got to learn about the fundamental design of a mechatronics system. <br>
+							If you are also interested in building your own 3D printer, <a href="https://www.3dprintersonlinestore.com" target="_blank"><i>here</i></a> is an awesome place to start.
+						</p>
+					</div>
+				</div>
+
+				<!-- Spool Filament Holder -->
+				<div class="contIn hidden1">
+					<h4><img src="./Main/images/spoolFilamentHolder.jpg" alt="SolidWorks and AutoCAD Spool Filament Holder"></h4>
+					<div class="infoCont">
+						<h4>Spool Filament Holder for 3D Printer</h4>
+						<h6><i>SolidWorks & AutoCAD</i></h6>
+						<p>
+							In addition to this project, I have also planned and designed a universal filament spool holder, which conveniently sits on top of the printer, on AutoCAD and SolidWorks respectively. It can hold any type of spool size securely, regardless of the spool hold size<br>
+							You can download the SolidWorks files <a href="../spool Filament Holder.zip" download="../spool Filament Holder.zip"><i>here</i></a>.
+						</p>
+					</div>
+				</div>
+
+				<!-- Robotic Poker Dealer -->
+				<div class="contIn hidden1">
+					<h4><img src="./Main/images/roboticPokerDealer.png" alt="Poker Dealing Robot"></h4>
+					<div class="infoCont">
+						<h4>Robotic Poker Dealer</h4>
+						<h6><i>C++</i></h6>
+						<p>
+							This was my first design project, done at the end of my 1A term at the University of Waterloo. My team and I designed, built, and programmed a mechatronics system.<br>
+							This little guy was built using LEGO EV3 and Tetrix Robotics pieces. Using sensors and motors, this dealer was not only able to identify how many players were in the game and where their location was, but was also able to shuffle and deal face down and face up cards to the players' locations and to the center of the table, while abiding to the rules of the game.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--------------- Interests --------------->
+		<div class="sections cont" id="interests">
+			<div class="contOut">
+				<h2><strong>Some of the things I enjoy</strong></h2>
+				<div class="contIn">
+					<div class="hidden">
+						<div class="tooltip">
+							<img src="./Main/images/weightlifting.png">
+							<span class="tooltiptext">
+								Fitness Enthusiast<br>
+							</span>
+						</div>
+					</div>
+					<div class="hidden">
+						<div class="tooltip">
+							<img src="./Main/images/chef.png">
+							<span class="tooltiptext">
+								Devoted Chef<br>
+								Passionate Taste Tester
+							</span>
+						</div>
+					</div>
+					<div class="hidden">
+						<div class="tooltip">
+							<img src="./Main/images/running.png">
+							<span class="tooltiptext">
+								Athlete<br>
+								Ball and/or Raquet Sports, Running/Sprints, Rowing, etc.
+							</span>
+						</div>
+					</div>
+					<div class="hidden">
+						<div class="tooltip hidden">
+							<img src="./Main/images/musicNote.png">
+							<span class="tooltiptext">
+								Guitar and Piano Player <br>
+								Spotify User
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!--------------- My Ideology --------------->
-		<div id="ideologyContIn">
-			<h2 class="decorated"><span><strong>This is how I roll</strong></span></h2>
-			<p>
-				<a href="https://personalexcellence.co/blog/101-ways-to-live-your-life-to-the-fullest/" target="_blank">Live your own life and have fun doing it</a><br>
-				<a href="http://blogoscoped.com/archive/2005-08-24-n14.html" target="_blank">It's ok to be lazy and dumb</a><br>
-				<a href="https://medium.com/the-mission/why-it-pays-to-be-relentless-in-the-game-of-life-414c4f59d46e" target="_blank">Go for it. Now.</a><br>
-				<a href="https://inspirationandwriting.wordpress.com/2016/07/28/five-by-five/" target="_blank">Rule of 5's</a><br>
-				<a href="http://www.eatingwell.com/recipes/22202/cooking-methods-styles/quick-easy/5-ingredient/slideshow/5-ingredient-recipes/" target="_blank">Treat yourself (well)</a><br>
-				<a href="https://scontent.fyto1-1.fna.fbcdn.net/v/t1.0-9/18835615_1213810582075434_7236826257516675665_n.jpg?_nc_cat=108&oh=2e3c1eb15f5461f4328bf7979ca19533&oe=5C5B2CD7" target="_blank">Be You</a><br>
-			</p>
+		<div class="sections" id="ideology">
+			<div id="ideologyContIn">
+				<h2 class="decorated"><span><strong>This is how I roll</strong></span></h2>
+				<p>
+					<a href="https://personalexcellence.co/blog/101-ways-to-live-your-life-to-the-fullest/" target="_blank">Live your own life and have fun doing it</a><br>
+					<a href="http://blogoscoped.com/archive/2005-08-24-n14.html" target="_blank">It's ok to be lazy and dumb</a><br>
+					<a href="https://medium.com/the-mission/why-it-pays-to-be-relentless-in-the-game-of-life-414c4f59d46e" target="_blank">Go for it. Now.</a><br>
+					<a href="https://inspirationandwriting.wordpress.com/2016/07/28/five-by-five/" target="_blank">Rule of 5's</a><br>
+					<a href="http://www.eatingwell.com/recipes/22202/cooking-methods-styles/quick-easy/5-ingredient/slideshow/5-ingredient-recipes/" target="_blank">Treat yourself (well)</a><br>
+					<a href="https://scontent.fyto1-1.fna.fbcdn.net/v/t1.0-9/18835615_1213810582075434_7236826257516675665_n.jpg?_nc_cat=108&oh=2e3c1eb15f5461f4328bf7979ca19533&oe=5C5B2CD7" target="_blank">Be You</a><br>
+				</p>
+			</div>
 		</div>
+
+		<!--------------- Contact --------------->
+		<div id="contact">
+			<div id="fancyUnderlineCont">
+				<img class="fancyUnderline" src="./Main/images/fancyUnderlineLeft.png">
+				<p id="closingRemarks">
+					<strong>NIAGARA is the place I call home<br>
+					and I gladly welcome bribes in the form of AYCE SUSHI.</strong>
+				</p>
+				<img class="fancyUnderline" src="./Main/images/fancyUnderlineRight.png">
+			</div>
+			<p>Let's talk, eh?</p>
+			<div id="social">
+				<a href="https://www.linkedin.com/in/gerry-saporito" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<a href="https://github.com/gksapori" target="_blank"><i class="fab fa-github"></i></a>
+				<a href="https://www.facebook.com/gerry.saporito" target="_blank"><i class="fab fa-facebook"></i></a>
+				<!-- <a href="mailto:gksapori@edu.uwaterloo.ca" target="_blank"><i class="far fa-envelope"></i></a> -->
+			</div>
+		</div>
+
+		<!--------------- Footer --------------->
+		<div id="footer">
+			<div id="footerContent">
+				<p>© Copyright 2019 - Gerry Saporito - All rights reserved.<br><br></p>
+				<p id="credit">Icons made by <a href="https://www.flaticon.com/authors/elias-bikbulatov" title="Elias Bikbulatov">Elias Bikbulatov</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+			</div>
+		</div>
+
 	</div>
 
-	<!--------------- Contact --------------->
-	<div id="contact">
-		<div id="fancyUnderlineCont">
-			<img class="fancyUnderline" src="./Main/images/fancyUnderlineLeft.png">
-			<p id="closingRemarks">
-				<strong>NIAGARA is the place I call home<br>
-				and I gladly welcome bribes in the form of AYCE SUSHI.</strong>
-			</p>
-			<img class="fancyUnderline" src="./Main/images/fancyUnderlineRight.png">
-		</div>
-		<p>Let's talk, eh?</p>
-		<div id="social">
-			<a href="https://www.linkedin.com/in/gerry-saporito" target="_blank"><i class="fab fa-linkedin"></i></a>
-			<a href="https://github.com/gksapori" target="_blank"><i class="fab fa-github"></i></a>
-			<a href="https://www.facebook.com/gerry.saporito" target="_blank"><i class="fab fa-facebook"></i></a>
-			<!-- <a href="mailto:gksapori@edu.uwaterloo.ca" target="_blank"><i class="far fa-envelope"></i></a> -->
-		</div>
-	</div>
-
-	<!--------------- Footer --------------->
-	<div id="footer">
-		<div id="footerContent">
-			<p>© Copyright 2019 - Gerry Saporito - All rights reserved.<br><br></p>
-			<p id="credit">Icons made by <a href="https://www.flaticon.com/authors/elias-bikbulatov" title="Elias Bikbulatov">Elias Bikbulatov</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
-		</div>
-	</div>
-
-</div>
-
-<script type="text/javascript" src="./Main/js/main.js"></script>
-<script type="text/javascript" src="./Main/js/stats.js"></script>
-<script type="text/javascript" src="./Main/js/navBars.js"></script>
-<script type="text/javascript" src="./Main/js/particleJumbotron.js"></script>
-<script type="text/javascript" src="./Main/js/projWorkCont.js"></script>
+	<!----------------------------------- Javascript Files ----------------------------------->
+	<script type="text/javascript" src="./Main/js/main.js"></script>
+	<script type="text/javascript" src="./Main/js/stats.js"></script>
+	<script type="text/javascript" src="./Main/js/navBars.js"></script>
+	<script type="text/javascript" src="./Main/js/particleJumbotron.js"></script>
+	<script type="text/javascript" src="./Main/js/projWorkCont.js"></script>
 </body>
 </html>

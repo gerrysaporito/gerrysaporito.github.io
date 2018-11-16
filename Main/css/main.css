@@ -189,11 +189,12 @@ h2 {
 .speech-bubble {
 	font-family: inherit;
 	position: relative;
-	background: #00aabb;
+	background: rgba(0,170,187, 0.8);
 	border-radius: .4em;
 	padding: 10px 15px;
 	text-align: center;
 	font-size: 14px;
+	color: white;
 }
 .speech-bubble:after {
 	content: '';
@@ -203,7 +204,7 @@ h2 {
 	width: 0;
 	height: 0;
 	border: 13px solid transparent;
-	border-top-color: #00aabb;
+	border-top-color: rgba(0,170,187, 0.8);
 	border-bottom: 0;
 	border-right: 0;
 	margin-left: -6.5px;
